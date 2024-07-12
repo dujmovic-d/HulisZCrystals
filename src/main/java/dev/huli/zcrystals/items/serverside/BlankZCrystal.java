@@ -1,6 +1,5 @@
 package dev.huli.zcrystals.items.serverside;
 
-import dev.huli.zcrystals.util.ZCrystalsClientSide;
 import dev.huli.zcrystals.util.ZCrystalsServerSide;
 import eu.pb4.polymer.core.api.item.SimplePolymerItem;
 import eu.pb4.polymer.resourcepack.api.PolymerModelData;
@@ -113,24 +112,24 @@ public class BlankZCrystal extends SimplePolymerItem {
         if(livingEntity instanceof ChickenEntity){
             itemStack.decrement(1);
             livingEntity.kill();
-            playerEntity.giveItemStack(new ItemStack(ZCrystalsClientSide.FLYINIUM_Z));
+            playerEntity.giveItemStack(new ItemStack(ZCrystalsServerSide.FLYINIUM_Z));
             return ActionResult.CONSUME;
         }
         if(livingEntity instanceof AllayEntity){
             itemStack.decrement(1);
-            playerEntity.giveItemStack(new ItemStack(ZCrystalsClientSide.FAIRIUM_Z));
+            playerEntity.giveItemStack(new ItemStack(ZCrystalsServerSide.FAIRIUM_Z));
             return ActionResult.CONSUME;
         }
         if(livingEntity instanceof IronGolemEntity){
             itemStack.decrement(1);
             livingEntity.kill();
-            playerEntity.giveItemStack(new ItemStack(ZCrystalsClientSide.STEELIUM_Z));
+            playerEntity.giveItemStack(new ItemStack(ZCrystalsServerSide.STEELIUM_Z));
             return ActionResult.CONSUME;
         }
         if(playerEntity.getEntityWorld().getDifficulty() != Difficulty.PEACEFUL && livingEntity instanceof CaveSpiderEntity){
             itemStack.decrement(1);
             livingEntity.kill();
-            playerEntity.giveItemStack(new ItemStack(ZCrystalsClientSide.POISONIUM_Z));
+            playerEntity.giveItemStack(new ItemStack(ZCrystalsServerSide.POISONIUM_Z));
             return ActionResult.CONSUME;
         }
 
