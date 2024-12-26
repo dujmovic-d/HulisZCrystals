@@ -7,7 +7,7 @@ plugins {
 
 
 group = "dev.huli"
-version = "1.2"
+version = "1.2.1"
 
 architectury {
     platformSetupLoomIde()

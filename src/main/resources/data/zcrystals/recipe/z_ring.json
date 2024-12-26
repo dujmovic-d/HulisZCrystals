@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "IGI",
-    "GDG",
-    "IGI"
+    "IGG",
+    "IZG",
+    "IGG"
   ],
   "key": {
-    "D": {
-      "item": "minecraft:diamond"
+    "Z": {
+      "item": "zcrystals:blank_z_crystal"
     },
     "I": {
       "item": "minecraft:iron_ingot"
     },
     "G": {
-      "item": "minecraft:glass"
+      "item": "minecraft:gold_ingot"
     }
   },
   "result": {
-    "item": "zcrystals:blank_z_crystal",
+    "id": "zcrystals:z_ring",
     "count": 1
   }
 }
